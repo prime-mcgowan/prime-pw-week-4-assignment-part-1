@@ -36,18 +36,21 @@ console.log('running addNumbers: 10 & 7:', addNumbers(10 ,7));
 console.log('running addNumbers: 4 & 9:', addNumbers(4, 9));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(){
+  console.log('in multiplyThree: 2, 8 & 9');
+   answer = 2 * 8 * 9;
+   return answer;
 }
+console.log('running mulitplyThree: 2, 8 and 9:', multiplyThree(2, 8, 9));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -58,9 +61,47 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
+//This one was tricky for me.
+//I did a few rounds of other code I knew and could maybe make work (commented out below).
+//I used that along with examples from above and I think I got it!!
+
+function getLast(array) {
+  if (array.length > 0) {
+    return array[array.length-1];
+  }
+    return undefined;
 }
+
+console.log('animal array:', getLast(['horse', 'bird', 'dog']));
+console.log('empty array:', getLast['']);
+
+/*
+colorArray = ['gold', 'black', 'white'];
+function getLast(colorArray) {
+  if(array.length === 0) {
+    return undefined;
+  }
+    return colorArray.length;
+ 
+}
+console.log (getLast(colorArray));
+*/
+
+/*
+//Code option for how to get the last item of an array
+
+let animalArray = ['fish', 'dog', 'horse'];
+console.log(animalArray);
+console.log(animalArray.length);
+
+let lastItem = animalArray[animalArray.length-1];
+console.log(lastItem);
+*/
+
+
+
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
