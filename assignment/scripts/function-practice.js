@@ -313,42 +313,42 @@ console.log(sumAll([0, 2, 4]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-
+/*
+function find(value, array) {
+  for(let i=0; i<array.length; i++){
+    if(value === array[i]) {
+    return true;
+  }
+    return false;
+}
+}
+*/
 let array = [5, -7, 9, -11, 13];
-
 let newArray = [];
 
 function allPositive(array){
   for (let i=0; i < array.length; i++) {
-    if (array[i] > 0) {
-    newArray.push(array[i])
+    if (array[i] > 0) { 
+    newArray.push(array[i]) 
+    }
   }
+ return newArray; 
 }
-return newArray
-}
-
 console.log(allPositive(array));
 
-let secondArray = [2, -3, 4, -5];
+let secondArray = [ -2, -3, -4, -5];
 let newerArray = [];
 
 function onlyPositive(secondArray) {
   for (let i=0; i < secondArray.length; i++) {
     if (secondArray[i] > 0){
       newerArray.push(secondArray[i])
-    }
+    } 
   }
-  return newerArray
+  return newerArray;  
 }
+
 console.log(onlyPositive(secondArray));
-
-
-
-
-
-
-
-
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
