@@ -226,12 +226,6 @@ console.log('find value a', find(2, ['2', '4', '6', '8']));
 */
 
 
-
-
-
-
-
-
 // ----------------------
 // Stretch Goals
 // ----------------------
@@ -260,8 +254,8 @@ function sumAll( ) {
 }
 */
 
+let numbersArray = [5, 10, 15, 20];
 function sumAll(numbersArray) {
-  numbersArray = [5, 10, 15, 20];
   let sum = 0;
   for(let i=0; i < numbersArray.length; i += 1) {
     sum += numbersArray[i]
@@ -269,7 +263,7 @@ function sumAll(numbersArray) {
   return sum;
 }
 
-console.log(sumAll(5, 10, 15, 20));
+console.log(sumAll(numbersArray));
 
 
 
@@ -315,8 +309,6 @@ console.log(sumAll([0, 2, 4]));
 
 
 
-
-
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
@@ -324,13 +316,38 @@ console.log(sumAll([0, 2, 4]));
 
 let array = [5, -7, 9, -11, 13];
 
+let newArray = [];
+
 function allPositive(array){
   for (let i=0; i < array.length; i++) {
-    if (array[i] > 0);
-    return array;
+    if (array[i] > 0) {
+    newArray.push(array[i])
   }
 }
+return newArray
+}
+
 console.log(allPositive(array));
+
+let secondArray = [2, -3, 4, -5];
+let newerArray = [];
+
+function onlyPositive(secondArray) {
+  for (let i=0; i < secondArray.length; i++) {
+    if (secondArray[i] > 0){
+      newerArray.push(secondArray[i])
+    }
+  }
+  return newerArray
+}
+console.log(onlyPositive(secondArray));
+
+
+
+
+
+
+
 
 
 
