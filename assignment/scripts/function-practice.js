@@ -258,6 +258,21 @@ function sumAll( ) {
   return sum;
 
 }
+*/
+
+function sumAll(numbersArray) {
+  numbersArray = [5, 10, 15, 20];
+  let sum = 0;
+  for(let i=0; i < numbersArray.length; i += 1) {
+    sum += numbersArray[i]
+  }
+  return sum;
+}
+
+console.log(sumAll(5, 10, 15, 20));
+
+
+
 
 /*
 let array = [5, 15, 45];
@@ -268,6 +283,7 @@ for(let value of array) {
 console.log(sum);
 */
 
+/*
 function sumAll( ) {
   let sum = 0;
   for(let index = 0; index < sumAll.length; index++) {
@@ -287,13 +303,14 @@ console.log(sumAll([5, 15, 45]));
 }
 */
 
-
+/*
 function sumAll( ) {
   for (let sum = 0; 0 < sumAll.length; sum++) {
   }
   return sum;
 }
 console.log(sumAll([0, 2, 4]));
+*/
 
 
 
@@ -304,16 +321,16 @@ console.log(sumAll([0, 2, 4]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-const array = [5, -7, 9, -11, 13];
+
+let array = [5, -7, 9, -11, 13];
 
 function allPositive(array){
-  let(i=0; i < array.length;  i++) {
-
-
+  for (let i=0; i < array.length; i++) {
+    if (array[i] > 0);
+    return array;
   }
-
-  return array;
 }
+console.log(allPositive(array));
 
 
 
