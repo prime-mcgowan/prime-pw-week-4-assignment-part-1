@@ -25,6 +25,8 @@ console.log('Test - should say "Hello Cameron!!"', helloName());
 
 
 // 3. Function to add two numbers together & return the result
+console.log('***3. Function to add two numbers together & return the result***')
+
 function addNumbers( firstNumber, secondNumber) {
   console.log('in addNumbers', firstNumber, secondNumber);
   let answer = firstNumber + secondNumber;
@@ -36,6 +38,8 @@ console.log('running addNumbers: 10 & 7:', addNumbers(10 ,7));
 console.log('running addNumbers: 4 & 9:', addNumbers(4, 9));
 
 // 4. Function to multiply three numbers & return the result
+console.log('***4. Function to multiply three numbers & return the result***')
+
 function multiplyThree(){
   console.log('in multiplyThree: 2, 8 & 9');
    answer = 2 * 8 * 9;
@@ -46,6 +50,8 @@ console.log('running mulitplyThree: 2, 8 and 9:', multiplyThree(2, 8, 9));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+console.log('***5. Function that will return true if a number is positive, or greater than zero, and false otherwiset***')
+
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
@@ -61,6 +67,8 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+console.log('***6. Function to return the _last_ item in an array. If the array is empty, return `undefined`.***')
+
 
 //This one was tricky for me.
 //I did a few rounds of other code I knew and could maybe make work (commented out below).
@@ -106,6 +114,7 @@ console.log(lastItem);
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+console.log('***7. Function to find a value in an array. Return true if the value is found and false otherwise. Use a loop;')
 
 function find(value, array) {
   for(let i=0; i<array.length; i++){
@@ -116,9 +125,9 @@ function find(value, array) {
 }
 }
 
-console.log(find (2, [2, 4, 6, 8]));
-console.log(find(3, [2, 4, 6, 8]));
-console.log(find(5, [5, 10, 15, 20]));
+console.log('expect true...2 is in the array:',find(2, [2, 4, 6, 8]));
+console.log('expect false...3 is not in the array:',find(3, [2, 4, 6, 8]));
+console.log('expect true...5 is in the array:',find(5, [5, 10, 15, 20]));
 
 
 
@@ -130,12 +139,6 @@ function isFirstLetter(letter, string) {
     return false;
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-
-
-
-
-
-
 
 /*
 let numberArray = [2, 4, 6, 8];
@@ -157,13 +160,6 @@ function find(value, array) {
 
 console.log(find(2, [2, 4, 6, 8]));
 
-
-
-
-
-
-
-
 function find(value, array) {
  for(value in array) {
   console.log(value[i]);
@@ -173,9 +169,6 @@ function find(value, array) {
     return false;
 }
   console.log(find, (2, [2, 4, 6, 8]));
-
-
-
 
  /*
   for (i in array)
@@ -202,7 +195,6 @@ for(let i=0; i++;){
 
 console.log(find(6, [2, 4 , 6, 8]));
 
-
 /*
 numberArray = [2, 4, 6, 8];
 function find(value,array){
@@ -211,15 +203,11 @@ if (numberArray[i]===8){
 }
 }
 
-
-
-
 /*let i = 0;
 function find( value, array ){
   if (i === value; i++) {
     return true;
   }
-    return false;
 }
 
 console.log('find value a', find(2, ['2', '4', '6', '8']));
@@ -229,30 +217,26 @@ console.log('find value a', find(2, ['2', '4', '6', '8']));
 // ----------------------
 // Stretch Goals
 // ----------------------
+console.log('*****STRETCH GOALS*****');
+
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
+console.log('***8. Function to check if a letter is the first letter in a string. Return true if it is, and false otherwise***')
+
 function isFirstLetter(letter, string) {
   if(letter === string[0]){
     return true;
   }
     return false;
 }
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+console.log('expect true...a is first letter in apple:', 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+console.log('expect false...z is not first letter in apple:', 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 
 
 
 // 9. Function to return the sum of all numbers in an array
-
-/*
-function sumAll( ) {
-  let sum = 0;
-  //LOOP TO ADD ITEMS
-  return sum;
-
-}
-*/
+console.log('***9. Function to return the sum of all numbers in an array***')
 
 let numbersArray = [5, 10, 15, 20];
 function sumAll(numbersArray) {
@@ -263,10 +247,17 @@ function sumAll(numbersArray) {
   return sum;
 }
 
-console.log(sumAll(numbersArray));
+console.log('numbersArray =',numbersArray);
+console.log('sum of numbersArray =',sumAll(numbersArray));
 
+/*
+function sumAll( ) {
+  let sum = 0;
+  //LOOP TO ADD ITEMS
+  return sum;
 
-
+}
+*/
 
 /*
 let array = [5, 15, 45];
@@ -287,8 +278,6 @@ function sumAll( ) {
 }
 
 console.log(sumAll([5, 15, 45]));
-
-
 
 /*function sumAll( ) {
   let sum = 0
@@ -313,16 +302,8 @@ console.log(sumAll([0, 2, 4]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-/*
-function find(value, array) {
-  for(let i=0; i<array.length; i++){
-    if(value === array[i]) {
-    return true;
-  }
-    return false;
-}
-}
-*/
+console.log('***Function to return new arrayt of all positve numbers...no positive...return empty');
+
 let array = [5, -7, 9, -11, 13];
 let newArray = [];
 
@@ -334,7 +315,8 @@ function allPositive(array){
   }
  return newArray; 
 }
-console.log(allPositive(array));
+console.log(array);
+console.log('expect all positive numbers:',allPositive(array));
 
 let secondArray = [ -2, -3, -4, -5];
 let newerArray = [];
@@ -348,7 +330,21 @@ function onlyPositive(secondArray) {
   return newerArray;  
 }
 
-console.log(onlyPositive(secondArray));
+console.log(secondArray);
+console.log('no positive numbers...expect empty array',onlyPositive(secondArray));
+
+/*
+function find(value, array) {
+  for(let i=0; i<array.length; i++){
+    if(value === array[i]) {
+    return true;
+  }
+    return false;
+}
+}
+*/
+
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
